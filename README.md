@@ -2,7 +2,6 @@
 Demo for linux
 
 ## Level 1 – Basic (Foundational Skills)
- 
 
 # **1️. Set up Users & Groups for Dev Team**
 
@@ -71,8 +70,7 @@ This ensures all dev team members can read/write inside project folder.
 
 ---
 
-![alt text](<../Evidences/Screenshot 2025-12-01 154449.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 154449.png>)
 
 # **3️. Install Required Packages (git, nginx, java)**
 
@@ -97,10 +95,8 @@ sudo systemctl start nginx --start
 sudo systemctl status nginx --status
 
 ```
-
-![alt text](<../Evidences/Screenshot 2025-12-01 155707.png>)
-![alt text](<../Evidences/Screenshot 2025-12-01 160132.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 155707.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160132.png>)
 ### Install Java (OpenJDK 17)
 
 ```bash
@@ -109,8 +105,8 @@ java -version
 ```
 
 ---
-![alt text](<../Evidences/Screenshot 2025-12-01 160603.png>)
-![alt text](<../Evidences/Screenshot 2025-12-01 160703.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160603.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160703.png>)
 
 # **4️. Check System Information (Memory, CPU, Disk)**
 
@@ -119,22 +115,20 @@ java -version
 ```bash
 lscpu
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 160836.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160836.png>)
 ###  **Check Memory**
 
 ```bash
 free -h
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 160921.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160921.png>)
 
 ###  **Check Disk Usage**
 
 ```bash
 df -h
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 160954.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160954.png>)
 
 
 #  **LEVEL 2 – Intermediate (Daily DevOps Tasks)**
