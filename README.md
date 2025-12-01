@@ -439,7 +439,6 @@ sudo systemctl enable nginx
 ---
 
 
-
 #  **LEVEL 3 – Advanced (Production-Ready Linux Administration)**
 
 ---
