@@ -70,7 +70,8 @@ This ensures all dev team members can read/write inside project folder.
 
 ---
 ![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 154449.png>)
-
+E:\Demo-Projects\Linux-demo\Evidences\Screenshot 2025-12-01 154449.png
+Screenshot 2025-12-01 154449.png
 
 # **3️. Install Required Packages (git, nginx, java)**
 
