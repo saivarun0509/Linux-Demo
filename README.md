@@ -1,7 +1,6 @@
 # Linux-Demo
 Demo for linux
 
-
 ## Level 1 – Basic (Foundational Skills)
  
 
@@ -72,6 +71,9 @@ This ensures all dev team members can read/write inside project folder.
 
 ---
 
+![alt text](<../Evidences/Screenshot 2025-12-01 154449.png>)
+
+
 # **3️. Install Required Packages (git, nginx, java)**
 
 Different Linux systems use different package managers.
@@ -93,7 +95,11 @@ sudo yum install nginx -y
 sudo systemctl enable nginx --now
 sudo systemctl start nginx --start
 sudo systemctl status nginx --status
+
 ```
+
+![alt text](<../Evidences/Screenshot 2025-12-01 155707.png>)
+![alt text](<../Evidences/Screenshot 2025-12-01 160132.png>)
 
 ### Install Java (OpenJDK 17)
 
@@ -103,7 +109,8 @@ java -version
 ```
 
 ---
-
+![alt text](<../Evidences/Screenshot 2025-12-01 160603.png>)
+![alt text](<../Evidences/Screenshot 2025-12-01 160703.png>)
 
 # **4️. Check System Information (Memory, CPU, Disk)**
 
@@ -112,14 +119,14 @@ java -version
 ```bash
 lscpu
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 160836.png>)
 
 ###  **Check Memory**
 
 ```bash
 free -h
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 160921.png>)
 
 
 ###  **Check Disk Usage**
@@ -127,6 +134,7 @@ free -h
 ```bash
 df -h
 ```
+![alt text](<../Evidences/Screenshot 2025-12-01 160954.png>)
 
 
 #  **LEVEL 2 – Intermediate (Daily DevOps Tasks)**
@@ -163,7 +171,7 @@ Make executable:
 ```bash
 sudo chmod +x /usr/local/bin/project_backup.sh
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 164557.png>)
 ### Step 3: Create cron job
 
 Open cron:
@@ -171,12 +179,13 @@ Open cron:
 ```bash
 sudo crontab -e
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 165055.png>)
 Add:
 
 ```bash
 0 1 * * * /usr/local/bin/project_backup.sh
 ```
+![alt text](<../Evidences/Screenshot 2025-12-01 165141.png>)
 
 ✔ Runs every day at 1AM
 ✔ Backup file name includes date/time
@@ -221,7 +230,7 @@ Add:
 ```bash
 0 2 * * * /usr/local/bin/log_cleanup.sh
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 170851.png>)
 ---
 
 ## **B) Service Restart Script (Example: Restart Nginx if down)**
@@ -252,6 +261,7 @@ Add:
 ```
 
 ---
+![alt text](<../Evidences/Screenshot 2025-12-01 171444.png>)
 
 ## **C) Health Check Script (CPU, Memory, Disk)**
 
@@ -297,7 +307,7 @@ Add:
 ```bash
 */10 * * * * /usr/local/bin/health_check.sh
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 172102.png>)
 ---
 
 # **3️. Manage Logs under `/var/log`**
@@ -359,7 +369,7 @@ sudo du -h /var/log
 ```bash
 top
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 161430.png>)
 
 
 
@@ -368,7 +378,7 @@ top
 ```bash
 free -h
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 162621.png>)
 ---
 
 ## **C) Disk Monitoring**
@@ -376,7 +386,7 @@ free -h
 ```bash
 df -h
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 162725.png>)
 
 
 ## **D) Network Monitoring**
@@ -384,19 +394,20 @@ df -h
 ```bash
 ss -tulnp
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 163908.png>)
 Check open ports:
 
 ```bash
 netstat -tulnp
 ```
+![alt text](<../Evidences/Screenshot 2025-12-01 164005.png>)
 
 Ping to test connectivity:
 
 ```bash
 ping google.com
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 164059.png>)
 ---
 
 ## **E) Service Troubleshooting**
@@ -412,7 +423,7 @@ systemctl status nginx
 ```bash
 journalctl -u nginx
 ```
-
+![alt text](<../Evidences/Screenshot 2025-12-01 164239.png>)
 ### Restart service
 
 ```bash
