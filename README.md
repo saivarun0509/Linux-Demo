@@ -130,7 +130,6 @@ df -h
 ```
 ![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 160954.png>)
 
-
 #  **LEVEL 2 – Intermediate (Daily DevOps Tasks)**
 
 ---
@@ -165,7 +164,7 @@ Make executable:
 ```bash
 sudo chmod +x /usr/local/bin/project_backup.sh
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 164557.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 164557.png>)
 ### Step 3: Create cron job
 
 Open cron:
@@ -173,14 +172,13 @@ Open cron:
 ```bash
 sudo crontab -e
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 165055.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 165055.png>)
 Add:
 
 ```bash
 0 1 * * * /usr/local/bin/project_backup.sh
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 165141.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 165141.png>)
 ✔ Runs every day at 1AM
 ✔ Backup file name includes date/time
 
@@ -224,7 +222,7 @@ Add:
 ```bash
 0 2 * * * /usr/local/bin/log_cleanup.sh
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 170851.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 170851.png>)
 ---
 
 ## **B) Service Restart Script (Example: Restart Nginx if down)**
@@ -255,8 +253,7 @@ Add:
 ```
 
 ---
-![alt text](<../Evidences/Screenshot 2025-12-01 171444.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 171444.png>)
 ## **C) Health Check Script (CPU, Memory, Disk)**
 
 Save output to `/var/log/healthcheck.log`.
@@ -301,7 +298,7 @@ Add:
 ```bash
 */10 * * * * /usr/local/bin/health_check.sh
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 172102.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 172102.png>)
 ---
 
 # **3️. Manage Logs under `/var/log`**
@@ -363,8 +360,7 @@ sudo du -h /var/log
 ```bash
 top
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 161430.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 161430.png>)
 
 
 ## **B) Memory Monitoring**
@@ -372,7 +368,7 @@ top
 ```bash
 free -h
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 162621.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 162621.png>)
 ---
 
 ## **C) Disk Monitoring**
@@ -380,28 +376,26 @@ free -h
 ```bash
 df -h
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 162725.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 162725.png>)
 
 ## **D) Network Monitoring**
 
 ```bash
 ss -tulnp
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 163908.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 163908.png>)
 Check open ports:
 
 ```bash
 netstat -tulnp
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 164005.png>)
-
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 164005.png>)
 Ping to test connectivity:
 
 ```bash
 ping google.com
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 164059.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 164059.png>)
 ---
 
 ## **E) Service Troubleshooting**
@@ -417,7 +411,7 @@ systemctl status nginx
 ```bash
 journalctl -u nginx
 ```
-![alt text](<../Evidences/Screenshot 2025-12-01 164239.png>)
+![alt text](<../../Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 164239.png>)
 ### Restart service
 
 ```bash
@@ -431,6 +425,7 @@ sudo systemctl enable nginx
 ```
 
 ---
+
 
 
 #  **LEVEL 3 – Advanced (Production-Ready Linux Administration)**
