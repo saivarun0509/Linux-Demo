@@ -69,7 +69,7 @@ sudo chmod 775 /opt/project
 This ensures all dev team members can read/write inside project folder.
 
 ---
-![alt text](<E:/Demo-Projects/Linux-demo/Evidences/Screenshot 2025-12-01 154449.png>)
+![alt text](../../Demo-Projects/Linux-demo/Evidences/1.png)
 
 
 # **3️. Install Required Packages (git, nginx, java)**
